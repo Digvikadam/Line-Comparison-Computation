@@ -9,11 +9,14 @@ public class LineComparison {
 		LENGTH_OF_LINE2 = Math.sqrt(Math.pow((x4-x3),2) + Math.pow((y4-y3),2));
 		System.out.println("length of the line 1 : " +LENGTH_OF_LINE1);
 		System.out.println("length of the line 2 : " +LENGTH_OF_LINE2);
-		if(LENGTH_OF_LINE1 == LENGTH_OF_LINE2) {
-			System.out.println("Length is Equal");
+		boolean EQUAL = (LENGTH_OF_LINE1 == LENGTH_OF_LINE2);
+		System.out.println("Is It Equal : "+EQUAL);
+		int Line = Double.compare(LENGTH_OF_LINE1,LENGTH_OF_LINE2); 
+		if (Line == 1){
+			System.out.println("line1 is greater than line 2");
 		}
-		else {
-			System.out.println("Length is not Equal");
+		else { 
+			System.out.println("line1 is lesser than line 2");
 		}
 	}
 }
